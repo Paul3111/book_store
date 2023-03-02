@@ -1,4 +1,3 @@
-require 'database_connection'
 require 'book'
 
 class BookRepository
@@ -13,9 +12,8 @@ class BookRepository
       book.id = record['id']
       book.title = record['title']
       book.author_name = record['author_name']
-      
       books_list << record
     end
-    return books_list
+      return books_list
   end
 end
